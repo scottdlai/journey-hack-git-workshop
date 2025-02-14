@@ -22,6 +22,7 @@ git config --global init.defaultbranch main
 git config --global alias.uncommit "!f() { git reset --soft ${1:-HEAD~}; }; f"
 # Usage: git unstage <path>
 git config --global alias.unstage "reset HEAD"
+git config --global alias.lol "log --graph --pretty=format:'%C(yellow bold)%h%C(reset)%C(auto)%d%C(reset) - %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
 ```
 
 ### Cloning a Repository
